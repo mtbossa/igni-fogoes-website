@@ -1,0 +1,46 @@
+/******* FIRST SECTION *******/
+#first-section img {
+  border-radius: 0;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+
+#first-section h1 {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+#first-section h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+#first-section i {
+  width: 50px;
+}
+
+#first-section .button {
+  font-size: 3rem;
+  background: linear-gradient(
+    122deg,
+    rgba(39, 229, 133, 1) 40%,
+    rgba(8, 154, 56, 1) 100%
+  );
+  color: white;
+  box-shadow: 0 0px 1px 0px var(--color-gray);
+  padding: 10px 20px;
+}
+
+#first-section .button:hover {
+  background: linear-gradient(
+    122deg,
+    rgb(30, 189, 109) 40%,
+    rgb(8, 131, 49) 100%
+  );
+}
+
+.whats-logo {
+  width: 50px;
+  margin-right: 10px;
+}
