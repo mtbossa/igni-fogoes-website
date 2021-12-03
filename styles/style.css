@@ -1,26 +1,26 @@
-/******* FIRST SECTION *******/
-#first-section img {
+/******* HOME SECTION *******/
+#home img {
   width: 100%;
   margin-bottom: 5rem;
   border-radius: 0;
 }
 
-#first-section h1 {
+#home h1 {
   margin-bottom: 5rem;
   font-size: 5rem;
 }
 
-#first-section h2 {
-  margin-bottom: 5rem;
+#home h2 {
+  margin-bottom: 6rem;
   font-weight: 300;
   font-size: 2.5rem;
 }
 
-#first-section i {
+#home i {
   width: 50px;
 }
 
-#first-section .button {
+#home .button {
   padding: 10px 20px;
   color: white;
   font-size: 3rem;
@@ -32,11 +32,11 @@
   box-shadow: 0 0px 1px 0px var(--color-gray);
 }
 
-#first-section .button:hover {
+#home .button:hover {
   background: linear-gradient(
     122deg,
-    rgb(30, 189, 109) 40%,
-    rgb(8, 131, 49) 100%
+    rgb(25, 165, 95) 40%,
+    rgb(2, 100, 35) 100%
   );
 }
 
