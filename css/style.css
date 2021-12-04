@@ -1,46 +1,28 @@
 /******* HOME SECTION *******/
-#home img {
+.section--text-center {
+  text-align: center;
+}
+
+.section__grid {
+  display: grid;
+  gap: 5rem;
+}
+
+.section__image {
   width: 100%;
-  margin-bottom: 5rem;
   border-radius: 0;
 }
 
-#home h1 {
-  margin-bottom: 5rem;
+.section__title {
   font-size: 5rem;
 }
 
-#home h2 {
-  margin-bottom: 6rem;
+.section__subtitle {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-#home i {
-  width: 50px;
-}
-
-#home .button {
-  padding: 10px 20px;
-  color: white;
-  font-size: 3rem;
-  background: linear-gradient(
-    122deg,
-    rgba(39, 229, 133, 1) 40%,
-    rgba(8, 154, 56, 1) 100%
-  );
-  box-shadow: 0 0px 1px 0px var(--color-gray);
-}
-
-#home .button:hover {
-  background: linear-gradient(
-    122deg,
-    rgb(25, 165, 95) 40%,
-    rgb(2, 100, 35) 100%
-  );
-}
-
-.whats-logo {
-  width: 50px;
-  margin-right: 10px;
+.section__text {
+  font-weight: 300;
+  font-size: 2rem;
 }

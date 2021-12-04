@@ -1,6 +1,5 @@
 body {
   font-family: "Lato", sans-serif;
-  text-align: center;
   background-color: var(--color-light-gray);
 }
 
@@ -31,8 +30,36 @@ body {
   align-items: center;
   justify-content: center;
   max-width: fit-content;
+  padding: 10px 20px;
+  color: var(--color-white);
+  font-size: 3rem;
+  background-color: red;
   border-radius: 50px;
 }
+
+.button--whats {
+  background: linear-gradient(
+    122deg,
+    rgba(39, 229, 133, 1) 40%,
+    rgba(8, 154, 56, 1) 100%
+  );
+  box-shadow: 0 0px 1px 0px var(--color-gray);
+}
+
+.button--whats:hover {
+  background: linear-gradient(
+    122deg,
+    rgb(25, 165, 95) 40%,
+    rgb(2, 100, 35) 100%
+  );
+}
+
+.whats-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Navbar/menu - Mobile first*/
 
 .navbar {
   display: flex;
@@ -79,6 +106,7 @@ body {
   background-color: var(--color-light-gray);
   visibility: hidden;
   place-content: center;
+  text-align: center;
 }
 
 .navbar__list--visible {
@@ -130,7 +158,7 @@ body {
   width: 100%;
 }
 
-/* Desktop menu */
+/* Desktop menu/header */
 @media (min-width: 600px) {
   .navbar__list {
     position: static;

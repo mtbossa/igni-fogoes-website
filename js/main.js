@@ -14,8 +14,8 @@ window.onload = () => {
     $buttonCloseMenu.classList.remove("navbar__button-close--visible");
   });
 
-  $menuLinks.forEach(($e) => {
-    $e.addEventListener("click", () => {
+  $menuLinks.forEach(($element) => {
+    $element.addEventListener("click", () => {
       $navbarList.classList.remove("navbar__list--visible");
       $buttonCloseMenu.classList.remove("navbar__button-close--visible");
     });
