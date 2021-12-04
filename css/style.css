@@ -26,3 +26,28 @@
   font-weight: 300;
   font-size: 2rem;
 }
+
+/******* SERVICES SECTION *******/
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: var(--color-white);
+  border-radius: .5rem;
+  box-shadow: 0 0 10px 0px #aaa;
+}
+
+.service-card__icon {
+  width: 150px;
+}
+
+.service-card__title {
+  font-size: 2.5rem;
+}
+.service-card__text {
+  font-size: 1.5rem;
+}

@@ -12,7 +12,7 @@ body {
 .header {
   padding: 2rem 0;
   background-color: var(--color-white);
-  box-shadow: 0 2px 10px 0px var(--color-gray);
+  box-shadow: 0 2px 10px 5px var(--color-shadow);
 }
 
 .logo {
@@ -107,7 +107,7 @@ body {
   height: 100vh;
   padding: 0;
   text-align: center;
-  background-color: var(--color-light-gray);
+  background-color: var(--color-white);
   visibility: hidden;
   place-content: center;
 }
