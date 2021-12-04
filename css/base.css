@@ -1,0 +1,175 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: var(--color-light-gray);
+}
+
+.wrapper {
+  margin-right: 2.4rem;
+  margin-left: 2.4rem;
+}
+
+.header {
+  padding: 2rem 0;
+  background-color: var(--color-black);
+  box-shadow: 0 2px 10px 0px var(--color-gray);
+}
+
+.logo {
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin: 10rem 0;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-black);
+}
+
+.navbar__button-open {
+  display: none;
+  cursor: pointer;
+  fill: var(--color-white);
+}
+
+.navbar__button-open--visible {
+  display: block;
+  fill: var(--color-white);
+}
+
+.navbar__button-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 4.3rem;
+  color: var(--color-black);
+  font-size: 3rem;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.navbar__button-close--visible {
+  visibility: visible;
+}
+
+.navbar__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  gap: 4rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  background-color: var(--color-light-gray);
+  visibility: hidden;
+  place-content: center;
+}
+
+.navbar__list--visible {
+  visibility: visible;
+}
+
+.navbar__item {
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+  font-weight: bold;
+  font-size: 5rem;
+  list-style-type: none;
+}
+
+.navbar__link {
+  position: relative;
+  color: inherit;
+  transition: color 100ms ease-in;
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none; /* iOS Safari */
+}
+
+.navbar__link:hover {
+  color: var(--color-orange);
+}
+
+.navbar__link:active {
+  color: var(--color-orange);
+}
+
+.navbar__link::after {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-orange);
+  transition: width 300ms ease-out;
+  content: "";
+}
+
+.navbar__link:hover::after {
+  width: 100%;
+}
+
+/* Desktop menu */
+@media (min-width: 600px) {
+  .navbar__list {
+    position: static;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    padding: 0;
+    background-color: inherit;
+    visibility: visible;
+  }
+
+  .navbar__item {
+    margin: 0;
+    padding: 0;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 2rem;
+    list-style-type: none;
+  }
+
+  .navbar__link {
+    position: relative;
+    color: inherit;
+    transition: color 100ms ease-in;
+  }
+
+  .navbar__button-open {
+    display: none;
+  }
+
+  .navbar__link::after {
+    display: none;
+    content: "";
+  }
+
+  .navbar__link:hover::after {
+    display: none;
+    width: 100%;
+  }
+}

@@ -8,11 +8,11 @@
     <title>IGNI Fogões</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/colors.css" />
-    <link rel="stylesheet" href="styles/utils.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome -->
     <script
@@ -27,20 +27,42 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header class="header">
-      <nav class="wrapper navbar">
-        <a href="#" class="logo bold">IGNI Fogões</a>
-        <div class="menu">
-          
-        </div>
-        <svg style="fill: white" viewBox="0 0 100 80" width="40" height="40">
-          <rect width="100" height="10"></rect>
-          <rect y="30" width="100" height="10"></rect>
-          <rect y="60" width="100" height="10"></rect>
-        </svg>
-      </nav>
+      <div class="wrapper">
+        <nav class="navbar">
+          <a href="#" class="logo">IGNI Fogões</a>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#home">Início</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#services">Serviços</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#testimonials">Depoimentos</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#about">Sobre</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#contact">Contato</a>
+            </li>
+            <div class="navbar__button-close">&times;</div>     
+          </ul>
+          <a class="navbar__button-open navbar__button-open--visible">
+            <svg viewBox="0 0 100 80" width="20" height="20">
+              <rect width="100" height="10"></rect>
+              <rect y="30" width="100" height="10"></rect>
+              <rect y="60" width="100" height="10"></rect>
+            </svg>
+          </a> 
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -81,10 +103,14 @@
         </div>
       </section>
       <hr />
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+      <section id="services" class="section"><h2>Serviços</h2></section>
+      <hr />
+      <section id="testimonials" class="section"><h2>Depoimentos</h2></section>
+      <hr />
+      <section id="about" class="section"><h2>Sobre</h2></section>
+      <hr />
+      <section id="contact" class="section"><h2>Contato</h2></section>
+      <hr />
     </main>
   </body>
 </html>
