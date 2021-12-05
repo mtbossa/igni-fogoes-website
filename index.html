@@ -36,11 +36,14 @@
       <div class="wrapper">
         <nav class="navbar">
           <!-- <a href="#" class="logo">IGNI Fogões</a> -->
-          <img
-            class="navbar__logo"
-            src="images/logo-igni.jpg"
-            alt="Logo da Igni Fogoões"
-          />
+          <a href="#home">
+            <img
+              class="navbar__logo"
+              src="images/logo-igni.jpg"
+              alt="Logo da Igni Fogoões"
+            />
+          </a>
+
           <ul class="navbar__list">
             <li class="navbar__item">
               <a class="navbar__link" href="#home">Início</a>
@@ -50,9 +53,6 @@
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#services">Serviços</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="#ratings">Avaliações</a>
             </li>
             <li class="navbar__item">
               <a class="navbar__link" href="#contact">Contato</a>
@@ -125,21 +125,21 @@
           />
           <div class="wrapper">
             <h2 class="section__title">Sobre nós</h2>
-            <p class="section__text">
+            <p class="text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               ipsa qui, minima deserunt nobis magnam dolore sunt iste.
               Consectetur laborum corporis voluptate! Ab molestias expedita vero
               rem assumenda, qui laudantium?
             </p>
             <br />
-            <p class="section__text">
+            <p class="text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               ipsa qui, minima deserunt nobis magnam dolore sunt iste.
               Consectetur laborum corporis voluptate! Ab molestias expedita vero
               rem assumenda, qui laudantium?
             </p>
             <br />
-            <p class="section__text">
+            <p class="text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               ipsa qui, minima deserunt nobis magnam dolore sunt iste.
               Consectetur laborum corporis voluptate! Ab molestias expedita vero
@@ -153,11 +153,10 @@
         <div class="wrapper">
           <h2 class="section__title">Serviços</h2>
           <div class="section__grid">
-            <p class="section__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              ipsa qui, minima deserunt nobis magnam dolore sunt iste.
-              Consectetur laborum corporis voluptate! Ab molestias expedita vero
-              rem assumenda, qui laudantium?
+            <p class="text">
+              Estamos a mais de <strong>30 anos</strong> no mercado de consertos domésticos
+              relacionados a gás, e diversos cliente já tiveram seus problemas
+              resolvidos de maneira eficiente e pontual.
             </p>
 
             <div class="service-card">
@@ -173,7 +172,7 @@
             </div>
             <div class="service-card">
               <div class="service-card__icon">
-                <img src="images/icon-cooker.svg" alt="Fogão" />
+                <img src="images/botijao.svg" alt="Fogão" />
               </div>
               <h3 class="service-card__title">Manutenção no gás</h3>
               <p class="service-card__text">
@@ -184,7 +183,7 @@
             </div>
             <div class="service-card">
               <div class="service-card__icon">
-                <img src="images/icon-cooker.svg" alt="Fogão" />
+                <img src="images/botijao.svg" alt="Fogão" />
               </div>
               <h3 class="service-card__title">Conserto de estufas</h3>
               <p class="service-card__text">
@@ -196,58 +195,49 @@
         </div>
       </section>
       <hr />
-      <section id="ratings" class="section">
-        <div class="wrapper">
-          <h2 class="section__title">Avaliações</h2>
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
-          <br />
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
-          <br />
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
-        </div>
-      </section>
-      <hr />
       <section id="contact" class="section">
         <div class="wrapper">
           <h2 class="section__title">Contato</h2>
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
-          <br />
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
-          <br />
-          <p class="section__text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-            ipsa qui, minima deserunt nobis magnam dolore sunt iste. Consectetur
-            laborum corporis voluptate! Ab molestias expedita vero rem
-            assumenda, qui laudantium?
-          </p>
+          <div class="text">
+            <p>
+              Entre em contato conosco para agendar um horário, tirar dúvidas ou
+              nos dar sugestões.
+            </p>
+            <br />
+            <p><i class="fas fa-phone-alt section__icon"></i>54 98122-7333</p>
+            <br />
+            <p>
+              <i class="fas fa-map-marker-alt section__icon"></i>R. Flores da
+              Cunha, 1982
+            </p>
+            <br />
+            <p>
+              <i class="fas fa-envelope section__icon"></i>ignifogoes@gmail.com
+            </p>
+          </div>
         </div>
       </section>
       <hr />
     </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <img
+          class="footer__logo"
+          src="images/logo-igni.jpg"
+          alt="Logo Igni Fogões"
+        />
+        <div class="text">
+          <p>&copy;2021 IGNI Fogões</p>
+          <br />
+          <p>Todos os direitos reservados.</p>
+          <br />
+          <div class="footer__socials">
+            <i class="fab fa-facebook-f footer__social-icon"></i>
+            <i class="fab fa-instagram footer__social-icon"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

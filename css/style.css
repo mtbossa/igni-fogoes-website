@@ -22,7 +22,11 @@
   font-size: 2rem;
 }
 
-.section__text {
+.section__icon {
+  margin-right: 1.8rem;
+}
+
+.text {
   font-weight: 300;
   font-size: 2rem;
 }
@@ -37,7 +41,7 @@
   padding: 4rem 2rem;
   text-align: center;
   background-color: var(--color-white);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 10px 0px #aaa;
 }
 
