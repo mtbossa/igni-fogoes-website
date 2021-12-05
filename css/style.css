@@ -13,6 +13,10 @@
   border-radius: 0;
 }
 
+.section__image--margin-top {
+  margin-top: 7rem;
+}
+
 .section__title {
   font-size: 5rem;
 }
