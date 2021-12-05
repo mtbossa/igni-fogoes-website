@@ -1,8 +1,8 @@
 {
-    "prettier.arrowParens": "avoid",
-    "prettier.semi": false,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "none",
-    "prettier.useTabs": true,
+    "arrowParens": "avoid",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "useTabs": true,
     "tabWidth": 2
 }
