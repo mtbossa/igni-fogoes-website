@@ -1,3 +1,7 @@
+:root {
+	--header-height: 8rem;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -18,8 +22,11 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	width: 100%;
-	padding: 2rem 0;
+	padding: 1.3rem 2.4rem;	
 	background-color: var(--color-black);
 	border-bottom: 1px solid var(--color-dark-gray);
 }
@@ -174,7 +181,7 @@ body {
 	width: 100%;
 }
 
-/* Desktop menu/header */
+/* Desktop menu/header 600px */
 @media (min-width: 600px) {
 	.navbar__list {
 		position: static;
@@ -221,6 +228,20 @@ body {
 	}
 }
 
+@media (min-width: 1024px) {
+	.header {
+		display: flex;
+		justify-content: center;
+		height: var(--header-height);
+	}
+
+	.navbar__logo {
+		position: absolute;
+		top: 1.3rem;
+		left: 2.4rem;
+	}
+}
+
 /******* FOOTER *******/
 .footer {
 	padding: 10rem 0;
@@ -247,6 +268,6 @@ body {
 }
 
 .footer__social-icon:visited {
-	text-decoration: none; 
 	color: white;
+	text-decoration: none;
 }
