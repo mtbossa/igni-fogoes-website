@@ -28,7 +28,7 @@
 
 .section__icon {
   margin-right: 1.8rem;
-  color: orange;
+  color: var(--color-orange);
 }
 
 .text {
@@ -50,7 +50,7 @@
   padding: 4rem 2rem;
   text-align: center;
   background-color: var(--color-white);
-  border-left: 3px solid orange;
+  border-left: 3px solid var(--color-orange);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 0 0 10px 0px #aaa;

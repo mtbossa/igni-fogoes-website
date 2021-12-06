@@ -51,7 +51,7 @@ body {
 		rgba(39, 229, 133, 1) 40%,
 		rgba(8, 154, 56, 1) 100%
 	);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .button--whats:hover {
@@ -63,7 +63,7 @@ body {
 }
 
 .whats-logo {
-	width: 50px;
+	width: 35px;
 	margin-right: 10px;
 }
 
@@ -203,6 +203,10 @@ body {
 	}
 
 	.navbar__button-open {
+		display: none;
+	}
+
+	.navbar__button-close {
 		display: none;
 	}
 
