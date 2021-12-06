@@ -35,6 +35,10 @@
   font-size: 2rem;
 }
 
+.text--white {
+  color: #fff;
+}
+
 /******* SERVICES SECTION *******/
 .service-card {
   display: flex;
@@ -52,7 +56,7 @@
 }
 
 .service-card__icon {
-  width: 150px;
+  width: 100px;
 }
 
 .service-card__title {

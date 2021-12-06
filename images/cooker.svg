@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 386.31 500" style="enable-background:new 0 0 386.31 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M362.37,491.67H22.58c-7.88,0-14.28-6.39-14.28-14.28V48.35c0-7.88,6.39-14.28,14.28-14.28h339.79
+		c7.88,0,14.28,6.39,14.28,14.28v429.05C376.64,485.28,370.25,491.67,362.37,491.67z"/>
+	<line class="st1" x1="70.39" y1="8.52" x2="150.61" y2="8.52"/>
+	<g>
+		<line class="st1" x1="72.14" y1="8.52" x2="152.36" y2="8.52"/>
+		<line class="st1" x1="232.59" y1="8.52" x2="312.81" y2="8.52"/>
+	</g>
+	<g>
+		<circle cx="66.94" cy="88.45" r="20.75"/>
+		<circle cx="129.28" cy="88.45" r="20.75"/>
+		<circle cx="190.92" cy="88.45" r="20.75"/>
+		<circle cx="252.56" cy="88.45" r="20.75"/>
+		<circle cx="318.01" cy="88.45" r="20.75"/>
+	</g>
+	<line class="st0" x1="46.19" y1="143.4" x2="338.76" y2="143.4"/>
+	<rect x="46.19" y="184.08" class="st0" width="292.57" height="266.65"/>
+</g>
+</svg>

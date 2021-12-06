@@ -222,7 +222,7 @@ body {
 .footer {
 	padding: 10rem 0;
 	text-align: center;
-	background-color: var(--color-white);
+	background-color: var(--color-black);
 }
 
 .footer__logo {
@@ -238,5 +238,12 @@ body {
 
 .footer__social-icon {
 	display: inline-block;
+	color: white;
 	font-size: 3rem;
+	text-decoration: none;
+}
+
+.footer__social-icon:visited {
+	text-decoration: none; 
+	color: white;
 }
