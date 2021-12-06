@@ -23,11 +23,12 @@
 
 .section__subtitle {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .section__icon {
   margin-right: 1.8rem;
+  color: orange;
 }
 
 .text {
