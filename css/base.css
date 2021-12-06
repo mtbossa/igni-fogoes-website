@@ -28,7 +28,7 @@ body {
 	width: 100%;
 	padding: 1.3rem 2.4rem;	
 	background-color: var(--color-black);
-	border-bottom: 1px solid var(--color-dark-gray);
+	border-bottom: 1px solid var(--color-gray);
 }
 
 .header--shadow {
