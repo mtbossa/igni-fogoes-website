@@ -1,3 +1,385 @@
+/* Reset CSS */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+	2. Remove default margin
+  */
+* {
+	margin: 0;
+}
+/*
+	3. Allow percentage-based heights in the application
+  */
+html {
+	font-size: 62.5%;
+}
+
+/*
+	3. Allow percentage-based heights in the application
+  */
+html,
+body {
+	height: 100%;
+}
+/*
+	Typographic tweaks!
+	4. Add accessible line-height
+	5. Improve text rendering
+  */
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+	6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+	7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+	8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+	9. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+a {
+	text-decoration: none;
+}
+/* Colors */
+:root {
+	--color-white: rgb(255, 255, 255);
+	--color-gray: rgb(80, 80, 80);
+	--color-light-gray: rgb(243, 243, 243);
+	--color-dark-gray: rgb(54, 52, 53);
+	--color-light-green: rgb(39, 229, 133);
+	--color-dark-green: rgb(8, 154, 56);
+	--color-orange: #f07339;
+	--color-shador: #aaa;
+	--color-black: rgb(20, 20, 20);
+}
+
+:root {
+	--header-height: 8rem;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: var(--color-dark-gray);
+	font-family: 'Lato', sans-serif;
+	background-color: var(--color-light-gray);
+}
+
+.wrapper {
+	margin-right: 2.4rem;
+	margin-left: 2.4rem;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1.3rem 2.4rem;
+	background-color: var(--color-black);
+	border-bottom: 1px solid var(--color-gray);
+}
+
+.header--shadow {
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.section {
+	margin: 10rem 0;
+}
+
+/* So the scroll goes to correct position when clicking nav links */
+.section:before {
+	position: relative;
+	display: block;
+	width: 0;
+	height: 10rem;
+	margin-top: -10rem;
+	content: '';
+}
+
+.button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	max-width: fit-content;
+	padding: 10px 20px;
+	color: var(--color-white);
+	font-size: 3rem;
+	background-color: red;
+	border-radius: 50px;
+}
+
+.button--whats {
+	background: linear-gradient(
+		122deg,
+		rgba(39, 229, 133, 1) 40%,
+		rgba(8, 154, 56, 1) 100%
+	);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button--whats:hover {
+	background: linear-gradient(
+		122deg,
+		rgb(30, 194, 112) 40%,
+		rgb(8, 124, 47) 100%
+	);
+}
+
+.whats-logo {
+	width: 35px;
+	margin-right: 10px;
+}
+
+/* Navbar/menu - Mobile first*/
+
+.navbar {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	background-color: inherit;
+}
+
+.navbar__logo {
+	width: 120px;
+}
+
+.navbar__button-open {
+	display: none;
+	cursor: pointer;
+	fill: var(--color-white);
+}
+
+.navbar__button-open--visible {
+	display: block;
+}
+
+.navbar__button-close {
+	position: absolute;
+	top: 1.5rem;
+	right: 4.3rem;
+	color: var(--color-white);
+	font-size: 3rem;
+	visibility: hidden;
+	cursor: pointer;
+	opacity: 0;
+	transition: 200ms;
+}
+
+.navbar__button-close--visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.navbar__list {
+	position: fixed;
+	top: -100rem;
+	left: 0;
+	display: grid;
+	gap: 4rem;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	text-align: center;
+	background-color: var(--color-black);
+	visibility: hidden;
+	transition: 400ms;
+	place-content: center;
+}
+
+.navbar__list--visible {
+	top: 0;
+	visibility: visible;
+}
+
+.navbar__item {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 5rem;
+	list-style-type: none;
+}
+
+.navbar__link {
+	position: relative;
+	color: var(--color-white);
+	transition: color 100ms ease-in;
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+	-webkit-touch-callout: none; /* iOS Safari */
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+	color: var(--color-orange);
+}
+
+.navbar__link:active,
+.navbar__link--active {
+	color: var(--color-orange);
+}
+
+.navbar__link::after {
+	position: absolute;
+	bottom: -1.5rem;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-orange);
+	transition: width 300ms ease-out;
+	content: '';
+}
+
+.navbar__link:hover::after,
+.navbar__link--active::after {
+	width: 100%;
+}
+
+/******* FOOTER *******/
+.footer {
+	padding: 10rem 0;
+	text-align: center;
+	background-color: var(--color-black);
+}
+
+.footer__logo {
+	width: 200px;
+	margin: 0 auto 2.5rem auto;
+}
+
+.footer__socials {
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+}
+
+.footer__social-icon {
+	display: inline-block;
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+}
+
+.footer__social-icon:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/* Desktop menu/header 600px */
+@media (min-width: 600px) {
+	.navbar__list {
+		position: static;
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
+		width: inherit;
+		height: inherit;
+		padding: 0;
+		background-color: inherit;
+		visibility: visible;
+	}
+
+	.navbar__item {
+		margin: 0;
+		padding: 0;
+		font-weight: bold;
+		font-size: 2rem;
+		list-style-type: none;
+	}
+
+	.navbar__link {
+		position: relative;
+		transition: color 100ms ease-in;
+	}
+
+	.navbar__button-open {
+		display: none;
+	}
+
+	.navbar__button-close {
+		display: none;
+	}
+}
+
+@media (min-width: 996px) {
+	.header {
+		display: flex;
+		justify-content: center;
+		height: var(--header-height);
+	}
+
+	.section {
+		margin: 16rem 0;
+	}
+
+	.section:before {
+		height: 16rem;
+		margin-top: -16rem;
+	}
+
+	.navbar__logo {
+		position: absolute;
+		top: 1.3rem;
+		left: 2.4rem;
+	}
+
+	.wrapper {
+		margin: 0 14rem;
+	}
+}
+
 .text {
 	font-weight: 300;
 	font-size: 2rem;
@@ -119,10 +501,22 @@
 		font-size: 3.5rem;
 		text-align: left;
 	}
-	
+
 	.section__subtitle {
 		font-weight: 300;
 		font-size: 2rem;
 		text-align: left;
 	}
+}
+
+.text--bold {
+	font-weight: bold;
+}
+
+.position--center {
+	margin: 0 auto;
+}
+
+.text--orange {
+	color: var(--color-orange);
 }
