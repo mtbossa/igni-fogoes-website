@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="css/colors.css" />
 		<link rel="stylesheet" href="css/utils.css" />
 		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/styles.css" />
 
 		<!-- Font Awesome -->
 		<script
@@ -77,15 +77,16 @@
 		</header>
 
 		<main>
-			<section id="home" class="section section--text-center">
-				<div class="section__grid">
-					<img
-						class="section__image section__image--margin-top"
-						src="images/cooker-repairs.jpg"
-						alt="Homem consertando um fogão"
-					/>
-					<div class="wrapper">
-						<div class="section__grid">
+			<section id="home" class="section section--margin-top text--center">
+				<div class="wrapper">
+					<div class="flex flex--align-center">
+						<img
+							class="section__image order--reverse"
+							src="images/cooker-repairs.jpg"
+							alt="Homem consertando um fogão"
+						/>
+
+						<div class="flex--column">
 							<h1 class="section__title">
 								Conserte já seu
 								<strong><span class="text--orange">fogão</span></strong> em
@@ -125,24 +126,19 @@
 			</section>
 			<hr />
 			<section id="about" class="section">
-				<div class="section__grid">
-					<img
-						class="section__image"
-						src="images/man-fixing-cooker.jpg"
-						alt="Homem consertando um fogão"
-					/>
-					<div class="wrapper">
-						<h2 class="section__title">Sobre nós</h2>
-						<p class="text">
-							A <strong>IGNI Fogões</strong>, apesar de ter seu nome criado
-							recentemente, está no mercado de fogões caxienses a mais de 30
-							anos, com o técnico Beto Bossa. Aos 15 anos de idade começava a
-							arrumar fogões, vazamentos e instalações de gás, etc. Hoje, com
-							mais de 40 anos de experiência, Beto consegue resolver
-							praticamente qualquer defeito relacionado a gás e fogão, seja seu
-							fogão industrial, cookstop ou normal, gás encanado ou não, nós
-							podemos resolver!
-						</p>
+				<div class="wrapper">
+					<div class="flex">
+						<img
+							class="section__image section__image--shadow-left"
+							src="images/man-fixing-cooker.jpg"
+							alt="Homem consertando um fogão"
+						/>
+						<div>
+							<h2 class="section__title">Sobre nós</h2>
+							<p class="text">
+								​Somos a <strong>IGNI Fogões</strong>!​ Referência em consertos de fogões há mais de 30 anos, desde a linha residencial como empresarial. Conserto de gás central, fogões industriais, fogões residenciais, fogões de restaurante, estufas a gás. Contamos também com a nossa linha especial de produtos: Fogareiro a gás para churrasqueira. O seu endereço certo para manutenção de fogões em Caxias do sul é a Igni Fogões, estamos esperando você.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -150,7 +146,7 @@
 			<section id="services" class="section">
 				<div class="wrapper">
 					<h2 class="section__title">Serviços</h2>
-					<div class="section__grid">
+					<div class="flex--column">
 						<p class="text">
 							Estamos a mais de <strong>30 anos</strong> no mercado de consertos
 							domésticos relacionados a gás, e diversos cliente já tiveram seus

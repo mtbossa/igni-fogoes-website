@@ -39,6 +39,16 @@ body {
 	margin: 10rem 0;
 }
 
+/* So the scroll goes to correct position when clicking nav links */
+.section:before {
+	position: relative;
+	display: block;
+	width: 0;
+	height: 10rem;
+	margin-top: -10rem;
+	content: '';
+}
+
 .button {
 	display: flex;
 	flex-direction: row;
@@ -246,23 +256,22 @@ body {
 	.navbar__button-close {
 		display: none;
 	}
-
-	.navbar__link::after {
-		display: none;
-		content: '';
-	}
-
-	.navbar__link:hover::after {
-		display: none;
-		width: 100%;
-	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 996px) {
 	.header {
 		display: flex;
 		justify-content: center;
 		height: var(--header-height);
+	}
+
+	.section {
+		margin: 16rem 0;
+	}
+
+	.section:before {
+		height: 16rem;
+		margin-top: -16rem;
 	}
 
 	.navbar__logo {
@@ -271,8 +280,7 @@ body {
 		left: 2.4rem;
 	}
 
-	.section {
-		margin: 16rem;
+	.wrapper {
+		margin: 0 14rem;
 	}
-	
 }
