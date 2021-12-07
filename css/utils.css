@@ -1,0 +1,11 @@
+.text--bold {
+  font-weight: bold;
+}
+
+.position--center {
+  margin: 0 auto;
+}
+
+.text--orange {
+  color: var(--color-orange);
+}
