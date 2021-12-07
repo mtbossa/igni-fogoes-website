@@ -20,18 +20,21 @@ const showCloseMenu = () => {
 
 	$buttonOpenMenu.addEventListener('click', () => {
 		$navbarList.classList.toggle('navbar__list--visible')
-		$buttonCloseMenu.classList.toggle('navbar__button-close--visible')
+		$buttonCloseMenu.classList.toggle('navbar__button-close--visible')		
+		$buttonOpenMenu.setAttribute('aria-expanded', true)
 	})
 
 	$buttonCloseMenu.addEventListener('click', () => {
 		$navbarList.classList.toggle('navbar__list--visible')
 		$buttonCloseMenu.classList.toggle('navbar__button-close--visible')
+		$buttonOpenMenu.setAttribute('aria-expanded', false)
 	})
 
 	$menuLinks.forEach($element => {
 		$element.addEventListener('click', () => {
 			$navbarList.classList.toggle('navbar__list--visible')
 			$buttonCloseMenu.classList.toggle('navbar__button-close--visible')
+			$buttonOpenMenu.setAttribute('aria-expanded', false)
 		})
 	})
 }
@@ -54,14 +57,14 @@ const activateMenuAtCurrentSection = () => {
 		const checkpointStart = checkpoint >= sectionTop
 		const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
-		if(checkpointStart && checkpointEnd) {
+		if (checkpointStart && checkpointEnd) {
 			document
 				.querySelector(`.navbar__link[href*=${sectionId}]`)
 				.classList.add('navbar__link--active')
 		} else {
 			document
-			.querySelector(`.navbar__link[href*=${sectionId}]`)
-			.classList.remove('navbar__link--active')
+				.querySelector(`.navbar__link[href*=${sectionId}]`)
+				.classList.remove('navbar__link--active')
 		}
 	})
 }
